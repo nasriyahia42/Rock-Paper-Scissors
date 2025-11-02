@@ -1,12 +1,12 @@
 .result-holder{
-  background-color:pink;
+  /*background-color:pink;*/
   height:350px;
   display:flex;
   justify-content: space-between;
 }
 
 .you-section,.computer-section,.result-section{
-  background-color: lightblue;
+  /*background-color: lightblue;*/
 }
 
 .you-section,.computer-section{
@@ -25,9 +25,10 @@
   width:300px;
   height:300px;
 
-  border-color:black;
+
   border:solid;
   border-width:4px;
+  border-color:black;
 }
 .you-move{
   background-color: rgba(0,0,255,.5);
@@ -46,4 +47,23 @@
 
   border-top:solid 4px white;
   border-bottom:solid 4px white;
+}
+
+.result-display{
+  position: fixed;
+  background-color: black;
+  height:80px;
+  right:0;
+  left:0;
+  bottom:370px;
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-text{
+  color:aqua;
+  font-size:35px;
 }
