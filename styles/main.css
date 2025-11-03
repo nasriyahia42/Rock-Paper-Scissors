@@ -22,13 +22,17 @@
   color:yellow;
 }
 .you-move,.computer-move{
-  width:300px;
-  height:300px;
+  width:100%;
+  height:80%;
 
 
   border:solid;
   border-width:4px;
   border-color:black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .you-move{
   background-color: rgba(0,0,255,.5);
@@ -50,20 +54,47 @@
 }
 
 .result-display{
-  position: fixed;
   background-color: black;
   height:80px;
-  right:0;
-  left:0;
-  bottom:370px;
+  width:100%;
   z-index: 1;
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-top: 40px
 }
 
 .result-text{
   color:aqua;
   font-size:35px;
+}
+
+@media screen and (max-width: 800px){
+  .you-section,.computer-section{
+    width: 180px;
+    height: 240px;
+    margin-top: 40px;
+  }
+  .result {
+    font-size:45px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .you-section,.computer-section{
+    width: 150px;
+    height: 220px;
+    margin-top: 40px;
+  }
+  .result {
+    font-size:35px;
+  }
+}
+
+.move-icon{
+  width:80%;
+  height:80%;
+  z-index:10;
 }

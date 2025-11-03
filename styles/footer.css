@@ -20,8 +20,8 @@
 }
 
 .rock-move,.paper-move,.scissors-move{
-  height:200px;
-  width:200px;
+  height:100%;
+  width:30%;
   background-color:rgba(94, 164, 229, 0.7);
   border:solid black 4px;
 
@@ -35,7 +35,7 @@
   border-color:white;
 }
 .rock-move:active,.paper-move:active,.scissors-move:active{
-  transition: background-color .5s,border-color .5s;
+  transition: background-color .2s,border-color .2s;
   background-color:rgba(22, 117, 176, 0.926);
   border-color:rgb(5, 71, 111);
 }
@@ -43,4 +43,11 @@
 .rock-emoji,.paper-emoji,.scissors-emoji{
   height:80%;
   width:80%;
+}
+
+@media screen and (max-width: 800px){
+  .move-container{
+    width:400px;
+    height: 130px;
+  } 
 }
