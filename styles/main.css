@@ -1,12 +1,7 @@
 .result-holder{
-  /*background-color:pink;*/
   height:350px;
   display:flex;
   justify-content: space-between;
-}
-
-.you-section,.computer-section,.result-section{
-  /*background-color: lightblue;*/
 }
 
 .you-section,.computer-section{
@@ -85,11 +80,12 @@
 @media screen and (max-width: 550px){
   .you-section,.computer-section{
     width: 150px;
-    height: 220px;
+    height: 190px;
     margin-top: 40px;
   }
   .result {
     font-size:35px;
+    margin-bottom:35px;
   }
 }
 

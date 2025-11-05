@@ -1,19 +1,15 @@
 .title {
   background-color: rgba(0,0,0,0.8);
 
-  position: fixed;
   
   height: 50px;
-
-  top: 5px;
-  right: 0px;
-  left: 0px;
 
   display: flex;
 
   justify-content: center;
   align-items: center;
 
+  width:100%;
 }
 .text-title {
   color:aqua;
