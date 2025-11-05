@@ -1,22 +1,3 @@
-/* what our script should do? 
-  1/ we pick a move  
-  2/ the computer picks a move randomly
-  3/ decides the result
-  4/ display it in the result-display
-  5/ display the icons of the moves
-  6/ add score
-  7/ save the score in document & JSON
-  8/ add a restart button
-  9/ add auto play feature
-
-  1/ Done!
-  2/ Done!
-  3/ Done!
-  4/ Done!
-  5/ Done!
-  6/ Done!
-  7/ Done!
-*/
 const resultDisplay = document.querySelector('.js-result-text');
 const computerSection = document.querySelector('.computer-move');
 const youSection = document.querySelector('.you-move');
@@ -54,9 +35,26 @@ document.querySelector('.js-scissors-move').addEventListener('click',() => {
 document.querySelector('.js-reset-button').addEventListener('click',() => {
   reset();
 })
+document.querySelector('.js-reset-button').addEventListener('click',() => {
+  reset();
+})
+document.querySelector('.js-auto-play-button').addEventListener('click',() => {
+  autoPlay();
+})
+let autoPlayOn = false;
+let intervalId;
+function autoPlay() {
 
-
-
+  if (autoPlayOn === false) {
+      intervalId = setInterval(() => {
+      playGame(pickComputerMove());
+    },1000)
+    autoPlayOn = true
+  }
+  else {
+    clearInterval(intervalId);
+  }
+}
 
 
 function playGame(playerMove) {

@@ -51,7 +51,15 @@
   align-items: center;
 }
 
-.reset-button{
+.container{
+  width:20%;
+
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reset-button,.auto-play-button{
   background-color: gray;
   width:70px;
   height:70px;
@@ -72,15 +80,19 @@
   width:70%;
   height:70%;
 }
+.auto-play-icon{
+  height:115%;
+  width:112%;
+}
 
-.reset-button:hover{
+.reset-button:hover,.auto-play-button:hover{
   border-color:white;
   background-color: rgb(172, 172, 172);
 
   transition: background-color .5s, border-color .5s;
 }
 
-.reset-button:active{
+.reset-button:active,.auto-play-button:active{
   background-color: rgb(115, 115, 115);
   border-color: rgb(46, 46, 46);
 
