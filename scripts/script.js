@@ -49,10 +49,11 @@ function autoPlay() {
       intervalId = setInterval(() => {
       playGame(pickComputerMove());
     },1000)
-    autoPlayOn = true
+    autoPlayOn = true;
   }
   else {
     clearInterval(intervalId);
+    autoPlayOn = false;
   }
 }
 
